@@ -1,0 +1,67 @@
+Search List:
+
+FLUX
+
+React is more of a library than a framework. It is not a complete solution for app development. Instead it is a view-layer solution with some mechanisms for maintaining internal state and has no opinion on solutions for data flow and management, server communication, routing, or other concerns.
+
+Often react is paired with the application architecture FLUX.
+
+The foundational building block of React is the component
+
+React keeps a respresentation of the DOM in memory (virtual DOM) and makes all alterations there. 
+
+
+
+
+JSX:
+
+    JSX and HTML5 are similiar in that they are both descendants of XML
+
+    Self Closing Tags EXAMPLE
+        * HTML5: <img src="my/image.jpg>
+        * JSX: <img src="my/image.jpg/> * required closing / *
+   
+    Class Keyword - class is a keyword in JS so class keyword is changed for JSX
+        * HTML5: <class="news-item">
+        * JSX: <className="news-item">
+
+    We can use JSON within markups instead of strings
+        * HTML5: <div styles="background: green; color: red;">
+        * JSX: <div styles={{background 'green', color 'red'}}>
+    
+    We can control dynamic content in JSX
+        * HTML5: <span>Hello World</span>
+        * JSX: <span>{'Hello' + 'World'}<span/>
+    
+    You may add tags based on application components in JSX
+        * JSX: <NewsItem>Hello React!<NewsItem>
+
+
+
+
+
+
+Concepts:
+
+
+
+
+React Components - Declaritive description of some visual feature on the page. (forms, menus, etc.)
+    *   Modular components - When creating a news feed component sub components are broken down as follows
+        > News feed: made of : News Items
+        >> News Items: made of: Image, Title, Description, Byline
+Component Composition -
+
+Component Properties(props) -
+
+Handling Events -
+
+Component State - 
+
+React Component Lifecycle -
+
+Alternate Component Forms -
+
+
+
+JSX - JavaScript/ HTML hybrid used to describe React Components
