@@ -15,6 +15,7 @@ export default class NewsItem extends Component {
 					//Booleans may be passed as such or with the presence of the key only
 					//highlighted
 					fontSize={18}
+					
 				/>
 				<Byline />
 				<Description />
