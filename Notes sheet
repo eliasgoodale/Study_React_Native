@@ -56,7 +56,8 @@ React Components - Declaritive description of some visual feature on the page. (
 Component Properties(Props)
     * Props allow for components to be dynamic
 
-    * Proptypes are how we formally tell other devlopers what properties a component accepts and what value types those properties should be.
+    * Proptypes are how we formally tell other devlopers what properties a component accepts and what value types those properties should be. They come with different functions for validating data of different type values such as string, number, function etc
+
 
 
 
