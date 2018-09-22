@@ -47,9 +47,27 @@ Concepts:
 
 
 React Components - Declaritive description of some visual feature on the page. (forms, menus, etc.)
+    
     *   Modular components - When creating a news feed component sub components are broken down as follows
         > News feed: made of : News Items
         >> News Items: made of: Image, Title, Description, Byline
+
+
+Component Properties(Props)
+    * Props allow for components to be dynamic
+
+    * Proptypes are how we formally tell other devlopers what properties a component accepts and what value types those properties should be.
+
+
+
+
+
+
+
+
+
+
+
 Component Composition -
 
 Component Properties(props) -
