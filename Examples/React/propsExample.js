@@ -46,3 +46,8 @@ Title.propTypes = {
         name: PropTypes.string
     }),
 };
+//When a value for a propType is not provided by the programmer, we can specify default values to prevent errors
+Title.defaultProps = {
+    highlighted: false,
+    fontSize: 18,
+}
