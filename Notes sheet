@@ -1,5 +1,11 @@
 Search List:
 
+
+# JavaScript
+
+bind(): the bind method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+
+
 FLUX
 
 React is more of a library than a framework. It is not a complete solution for app development. Instead it is a view-layer solution with some mechanisms for maintaining internal state and has no opinion on solutions for data flow and management, server communication, routing, or other concerns.
