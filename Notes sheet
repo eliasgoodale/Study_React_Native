@@ -67,20 +67,33 @@ REACT COMPONENTS
     Event Handling 
         * Elements are what we see on the screen const element = <tag> Content </tag>
         * For an event handler we can do something like this <form onSubmit= {validateForm}>
-    > constructor()
-        * Can be placed before render at the top of the component class to perform operations like setting up state
-    Lifecycle Methods
+
+    
+  Lifecycle Methods
+    Mount:
+
+        > constructor()
+            * Can be placed before render at the top of the component class to perform operations like setting up state the first time a component is created.
         > componentWillMount()
-            * This method will be called before the render method and can be used to set up any data that a component will need before its render
+            * This method will be called before the render method and can be used to set up any data that a component will need before its render like starting a component interval
         > componentDidMount()
             * After rendering the component this method can be called often for integration with non react libraries
+
+    Update: These methods will continue cyclically until the component is unmounted or removed.
+
         > componentWillReceiveProps(nextProps)
             * This method can be used to update a component's state that is derived from props. The component recieves a new set of props and we can compare within this method the new props vs the old.
         > shouldComponentUpdate()
             * This is the only lifecycle method that expects a return value (T/F). If true this method allows the update cycle to continue, if false the re-render does not occur. If not defined React assumes this to be true. This method can be used in large applications to fine tune uneccessary rendering and reduce stuttering.
         > componentWillUpdate(nextProps, nextState)
-            * If shouldComponentUpdate() returns true, this method is called as a last step before re-render. Here we have access to the new props and the new state to prepare for the render in any way we see fit   
+            * If shouldComponentUpdate() returns true, this method is called as a last step before re-render. Here we have access to the new props and the new state to prepare for the render in any way we see fit
+        > componentDidUpdate(prevProps, prevState)
+            * This method receives the previous props after this.props is set to nextProps. We can use this method to check that everything has updated properly and the state/props have changed according to plan.
+
+    Unmount:
         
+        > componentWillUnmount()
+            * This is a good place to clean up any intervals or state changes that were enacted in componentWillMount() just before the component is unmounted
 
 
 
