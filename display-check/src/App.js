@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Title from './Components/Title';
-import Byline from './Components/Byline';
-import Description from './Components/Description';
+import {Title, Byline, Description} from './Components/components';
+
 
 export default class NewsItem extends Component {
 
@@ -18,16 +17,18 @@ export default class NewsItem extends Component {
 			expanded: !this.state.expanded
 		});
 	}
-	
+
 	renderBody() {
 		if (this.state.expanded) {
 			return(
 					<div>
 						<Byline>
-							{this.props.bylineText}
+							{/* {this.props.bylineText} */}
+							Byline!
 						</Byline>
 						<Description>
-							{this.props.descriptionText}
+							{/* {this.props.descriptionText} */}
+							Description!
 						</Description>
 
 					</div>
@@ -45,8 +46,10 @@ export default class NewsItem extends Component {
       	{/* <Image /> */}
       	<Title 
 					highlighted
+					// titleText="Hello World"
 				>
-					{this.props.titleText}
+					{/* {this.props.titleText} */}
+					Hello World
 				</Title>
 				{ this.renderBody() }
       </div>
